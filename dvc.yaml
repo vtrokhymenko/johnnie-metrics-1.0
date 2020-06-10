@@ -1,0 +1,21 @@
+stages:
+  trainme:
+    cmd: python train.py
+    deps:
+    - users.csv
+    params:
+    - dense
+    - dropout
+    - epochs
+    - log_file
+    outs:
+    - logs
+    metrics:
+    - summary.json:
+        cache: false
+    plots:
+    - plots.csv:
+        cache: false
+        y: accuracy
+        x_label: epoch
+        title: Accuracy
