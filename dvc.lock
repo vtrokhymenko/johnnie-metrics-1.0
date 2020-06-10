@@ -6,13 +6,13 @@ trainme:
   params:
     params.yaml:
       dense: 512
-      dropout: 0.05
+      dropout: 0.1
       epochs: 7
       log_file: plots.csv
   outs:
   - path: logs
-    md5: 1044f5cb08cb22fd01c8480e71cb1bea.dir
+    md5: 7627d2d46335b49a86975f77d0c5e48e.dir
   - path: plots.csv
-    md5: 533a42e09851ae162408320ff88cb98d
+    md5: 193ec036cfa9225e8b0c8392a06ccae2
   - path: summary.json
-    md5: 7e7c8891cf57aeb55dba08bad22758da
+    md5: 97c1300f1578a90aa653cbc89cf304ad

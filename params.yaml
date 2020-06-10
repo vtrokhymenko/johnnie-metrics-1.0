@@ -1,4 +1,4 @@
 dense: 512
-dropout: 0.05
+dropout: 0.1
 epochs: 7
 log_file: plots.csv
