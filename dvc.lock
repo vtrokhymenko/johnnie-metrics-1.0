@@ -1,0 +1,16 @@
+trainme:
+  cmd: python train.py
+  deps:
+  - path: users.csv
+    md5: 5febbef14389ebcfc3e501fa1091adcb
+  params:
+    params.yaml:
+      epochs: 5
+      log_file: plots.csv
+  outs:
+  - path: logs
+    md5: 377b325fb295dfe4ded0db6d3a8e2c21.dir
+  - path: plots.csv
+    md5: 43d38439c255244dacd5002d93d5106d
+  - path: summary.json
+    md5: 0c071d89540e495b8382e153ba369ecb
