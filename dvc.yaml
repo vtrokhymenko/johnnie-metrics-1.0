@@ -4,10 +4,9 @@ stages:
     deps:
       - users.csv
     params:
-      params.yaml:
-        models.dense: 512
-        models.epochs: 10
-        models.log_file: plots.csv
+      - models.dense
+      - models.epochs
+      - models.log_file
     outs:
       - logs
     metrics:
