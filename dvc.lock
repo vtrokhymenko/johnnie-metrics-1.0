@@ -8,17 +8,17 @@ stages:
       size: 10
     params:
       params.yaml:
-        dense: 512
-        epochs: 8
-        log_file: plots.csv
+        models.dense: 512
+        models.epochs: 10
+        models.log_file: plots.csv
     outs:
     - path: logs
-      md5: 78f3a38db6fa96e61b5a07bdca91b688.dir
-      size: 172181
+      md5: ca3672dd627c873f0aeadbd725d0a1bb.dir
+      size: 189262
       nfiles: 10
     - path: plots.csv
-      md5: 49708c6b4d065f5d4bb918ec5fa1096a
-      size: 692
+      md5: 5bf54142ccd594a04b786bdeee937d54
+      size: 849
     - path: summary.json
-      md5: caf3b75453f52ea2f7f2ece14c0070d7
-      size: 120
+      md5: 3c04364c24ce32bf1347f612a0d4a64c
+      size: 121

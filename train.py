@@ -5,9 +5,9 @@ import json
 import time
 
 params = yaml.safe_load(open('params.yaml'))
-epochs = params['epochs']
-log_file = params['log_file']
-dense = params['dense']
+epochs = params['models']['epochs']
+log_file = params['models']['log_file']
+dense = params['models']['dense']
 
 mnist = tf.keras.datasets.mnist
 

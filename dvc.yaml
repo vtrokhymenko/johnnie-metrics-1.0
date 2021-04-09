@@ -2,13 +2,14 @@ stages:
   trainme:
     cmd: python train.py
     deps:
-    - users.csv
+      - users.csv
     params:
-    - dense
-    - epochs
-    - log_file
+      params.yaml:
+        models.dense: 512
+        models.epochs: 10
+        models.log_file: plots.csv
     outs:
-    - logs
+      - logs
     metrics:
     - summary.json:
         cache: false

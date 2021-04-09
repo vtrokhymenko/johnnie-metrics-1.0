@@ -1,3 +1,4 @@
-dense: 512
-epochs: 8
-log_file: plots.csv
+models:
+  dense: 512
+  epochs: 10
+  log_file: plots.csv
